@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> Contact Card </title>
+    <link rel="stylesheet" typle="text/css" ref="contactCard.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $(document).on("click","button",function(){
+                $('div').append("<table><tr><td>" + $('input[name="first_name"]').val() +
+                "</td><td>" + $('input[name="last_name"]').val() + "</td></tr></table>")
+                alert('button clicked')
+            })
+            $(document).on('click','div',function(){
+                // console.log();
+                // alert('div clicked')
+                var textarea = $('textarea').html()
+                var table = $('table').html();
+                var temp ;
+                console.log(textarea);
+                console.log(temp);
+                $('temp').html('#textarea');
+                $('#textarea').html('table')
+                console.log(temp)
+            })
+
+        })
+    </script>
+    <body>
+        <form>
+            First Name: <input type="text" name="first_name" value="Your first name">
+            Last Name: <input type="text" name="last_name" value="Your last name">
+        </form>
+        <textarea id="textarea" type="text" form="contactCard" rows="10" cols="50"> This is a description area. </textarea>
+        <button type="submit"> Add User </button>
+        <div>
+        </div>
+    </body>
+</head>
+</html>

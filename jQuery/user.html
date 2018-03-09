@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title> Users </title>
+    <link rel="stylesheet" type="text/css" href="user.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+            $('.submit').click(function(){
+                console.log('hello');
+                console.log($("#first").val());
+                console.log($('input[name="last_name"]').val())
+                var first=$('#first').val();
+                console.log(first);
+                $("table").append("<tr><td>"+ first +
+                                "</td><td>" + $('input[name="last_name"]').val() +
+                                "</td><td>" + $('input[name="email"]').val() +
+                                "</td><td>" +  $('input[name="contact"]').val() + "</td></tr>"
+
+                                //  `</td><td>    ${'input[name="contact"]'.val()} </td></tr>`
+
+                )
+                // "<th class='last'></th></tr>")
+                return false;
+            })
+            // console.log($(this).serialize());
+
+            $("#test").click(function(){
+                $("#test").text('color')
+            })
+
+    })
+</script>
+<body>
+<table>
+    <tr>
+        <th class="first">First Name: </th>
+        <th class='last'>Last Name: </th>
+        <th class='emial'>Email Address: </th>
+        <th class='contact'>Contact # : </th>
+    </tr>
+</table>
+<form id="form1">
+    <!-- action="process.php" method="post" -->
+    First Name: <input type="text" id="first" name="first_name" value="Adnan">
+    Last Name: <input type="text" name="last_name" value="Akhonbay">
+    Email Address: <input type="text" name="email" value="gmudmis07@gmail.com">
+    Contact No.: <input type="text" name="contact" value="7036534156">
+    <input class="submit" type="submit" value="submit!">
+</form>
+<!-- <button class="btn"> New User <button> -->
+<!-- <button id="test" type="color">red</button> -->
+
+</body>
+</html>

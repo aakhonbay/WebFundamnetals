@@ -1,0 +1,13 @@
+GRAY TAGS ARE FOLDERS CREATED AS FOLLOW-ALONG WORK
+-jQuery: https://jquery.com/
+-Best javascript libraries: https://www.javascripting.com/
+-Facial recognition javascript: https://trackingjs.com/
+call back function
+this
+getter and setters
+- javascript keycodes, unicode library keypressing:
+https://css-tricks.com/snippets/javascript/javascript-keycodes/
+-Keep in mind the basic flow of using jQuery:
+——Select the element, class or id using the jQuery selector.
+——Add an event listener: How do you want this event to be triggered?
+——Write the code on what you want to happen when the event is triggered.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basics!</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            var dc = "dojo";
+            console.log(dc);
+            console.log('you are now working with jQuery');
+            alert('you are now working with jQuery');
+            $('a').click(function(){
+                alert('you are now leaving the page!');
+            })
+            $('p').hide();
+            $('#hide').click(function(){
+                $('p').hide();
+            })
+            $('#show').click(function(){
+                    $('p').show();
+            })
+
+            $('h3').hover(function(){
+                $('h2').text('go see the Space Needle!');
+            }, function(){$('h2').text('Mountain View, Californi')});
+            $('.append').click(function(){
+                $('.result').append('<h4>.append adds HTML! </h4>');
+            })
+            $('button').click(function(){
+                $('button').css('background-color', 'yellow');
+            })
+        });
+    </script>
+</head>
+<body>
+    <p> This paragraph will hide and show. </p>
+    <button id='hide' type="button">This will hide all paragraphs</button>
+    <button id='show' type="button">Click to show all paragraphs</button>
+    <a id='mylink' href="http://api.jquery.com/">jQery documentation</a>
+    <h3>Mountain View, California</h3>
+    <h2>Seattle, Washington</h2>
+    <button class='append'>Click to see .appen work!</button>
+    <div class='result'></div>
+</body>
+</html>
+
+
+
+
+
+</script>
+</html>

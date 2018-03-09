@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" charset="utf-8">
+    <meta name="description"
+    content="This blog highlights my personal
+    experience in a coding bootcamp">
+    <link rel="stylesheet" type="text/css"
+    href="janedoe.css">
+    <title>Jane Doe portfolio</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="name">  </div>
+        <div id="personal_title"> </div>
+      </div> <!-- end header -->
+    </div> <!-- end container -->
+    <div id="footer">
+      <div id="contact_info"> </div>
+      <div id="links"> </div>
+    </div> <!-- end footer -->
+    <div id="wrapper">
+        <div id="image"> </div>
+        <div id="bio">
+          <div id="main_title"></div>
+          <div id="main_descrp"></div>
+        </div> <!-- end bio -->
+        <div id="project1">
+          <div id="p1t" class="p_title"></div>
+          <div id="p1desc" class="p_desc"> </div>
+          <div id="p1i"></div>
+          <div id="tech1" class="p_title"></div>
+          <div id="tech1logos" class="tech_logos"></div>
+          <div id="tech1btn" class="butn"></div>
+        </div> <!-- end project1 -->
+        <div id="project2">
+          <div id="p2t" class="p_title"></div>
+          <div id="p2desc" class="p_desc"> </div>
+          <div id="p2i"></div>
+          <div id="tech2" class="p_title"></div>
+          <div id="tech2logos" class="tech_logos"></div>
+          <div id="tech2btn" class="butn"></div>
+        </div> <!-- end project2 -->
+        <div id="project3">
+            <div id="p3t" class="p_title"></div>
+            <div id="p3desc" class="p_desc"> </div>
+            <div id="p3i"></div>
+            <div id="tech3" class="p_title"></div>
+            <div id="tech3logos" class="tech_logos"></div>
+            <div id="tech3btn" class="butn"></div>
+          </div> <!-- end project3 -->
+    </div> <!-- end wrapper-->
+  </body>
+</html>
+
+<span></span>
+<div id="header">
+    <ul>
+      <li>Jane Doe</li>
+      <li>Ninja Warrior</li>
+    </ul>
+</div> <!-- end header -->
+display: flex;
+list-style: none;
+top: 30px;
+justify-content: space-around;

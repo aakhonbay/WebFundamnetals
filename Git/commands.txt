@@ -1,0 +1,31 @@
+1.open terminal: command space bar
+2.cd desktop
+3.mkdir test
+4.cd test >>> touch index.html style.css commands.txt
+5. cp index.html index_1.html
+6.rm style.css
+7.cd desktop >>> mkdir destination
+8.cd test >>> mv index.html ../destination/
+9.cd desktop >>> cd test >>> ls >>> cd desktop >>> cd destination >>> ls
+10.cd desktop >>> rm -rf destination
+11.reset clear open 
+ls -R
+mv directoryName/fileName moveToDirectoryName/fileName
+udacity linux commands
+man ls
+q
+mkdir pi_git //is users
+README.md //mark down file
+git init
+ls -alrt
+vi .git
+git add .
+git status
+git remote -v
+git push origin master
+vi Readme.md
+git add .
+git status
+git commit -m “message”
+git push
+git add . >>> git commit -m “MY MESSAGE” >>> git push origin master

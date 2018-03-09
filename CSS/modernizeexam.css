@@ -1,0 +1,162 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /*outline: 1px solid gold;*/
+
+}
+#wrapper{
+  background-color: #2E2E2E;
+  padding: 10px;
+  width: 1000px;
+  margin: 20px auto;
+}
+#header{
+  background-color: #1A1A1A;
+  height: 120px;
+  width: 1000px
+}
+#header_logo{
+  margin-left: 10px;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+#header_phone{
+  color: #E0E0DE;
+  margin-left: 595px;
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+
+}
+ul{
+  background-color: #515151;
+  height: 50px;
+}
+li{
+  display: inline-block;
+  top:5px;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#contact{
+  width: 450px;
+  margin-top: 10px;
+}
+#home{
+  margin-left: 8px;
+}
+#image{
+  width: 1000px;
+  height: 363px;
+}
+#content{
+  height:200px;
+  border-top: 6px solid #3B3B3B;
+  background-color: #464647;
+}
+.content_boxes{
+  margin-top: 45px;
+  margin-left: 6px;
+  width:240px;
+  /*height: 120px;*/
+  display: inline-block;
+  vertical-align: top;
+}
+.content_title{
+  vertical-align: top;
+  color: #E77D38;
+  font-size: 25px;
+  display: inline-block;
+
+}
+.content_icon img{
+  margin-right: 10px;
+  width: 48px;
+  display: inline;
+  /*position: static;*/
+}
+.content_text{
+  color: #DCDDDE;
+  margin-left:60px;
+  width: 180px;
+  font-size: 15px;
+  vertical-align:middle;
+}
+#buy{
+  background-color: #152014;
+  color: white;
+  height: 170px;
+  width:1000px;
+  display: inline-block;
+
+}
+#buy_title{
+  margin-top: 34px;
+  margin-left: 10px;
+  font-size: 30px;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+#buy_button{
+  color: #E0E0DE;
+  margin-left: 800px;
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+
+}
+#buy_button button{
+  height:50px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #E77D38;
+}
+#buy_text{
+  width: 700px;
+  margin-left: 10px;
+  margin-top: -48px;
+}
+#portfolio{
+  /*height:200px;*/
+
+  background-color: #464647;
+}
+.portfolio_boxes{
+  margin-top: 45px;
+  margin-left: 6px;
+  width:240px;
+  /*height: 120px;*/
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolio_title{
+  vertical-align: top;
+  color: #E77D38;
+  font-size: 25px;
+  display: inline-block;
+}
+#portfolio_header{
+  margin-left: 10px;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+#all_projects a:link{
+  color: #E77D38;
+  margin-left: 840px;
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: none;
+}
+#footer a:link{
+  height:100px;
+  margin-left: 870px;
+  color: white;
+}

@@ -1,0 +1,74 @@
+Adnans-MBP:dojoassignments AdnanAkhonbay$ ls -R
+MEAN            Ruby            iOS
+Python          Webfundamentals netCore
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./Webfundamentals:
+CSS             Git             HTML            Javascript      about.txt
+
+./Webfundamentals/CSS:
+about.txt               janedoe.css             modernizeexam.css
+block_inlineSampleCode  janedoe.html            modernizeexam.html
+code                    javascriptbasics.css    plottingyourblocks.css
+css_overviewSampleCode  javascriptbasics.html   plottingyourblocks.html
+csscode                 layoutsSampleCode
+janeDoePortfolio_images modernize
+
+./Webfundamentals/CSS/block_inlineSampleCode:
+block-inline.html       css_2.css
+
+./Webfundamentals/CSS/css_overviewSampleCode:
+css-overview.html       css_1.css
+
+./Webfundamentals/CSS/janeDoePortfolio_images:
+CSS.png                         github.png
+HTML.png                        iOS-Swift.png
+JavaScript.png                  jQuery.png
+LAMP.png                        lamode.png
+MEAN.png                        linkedin.png
+RUBY.png                        materialize.png
+ajax.png                        mongodb.png
+angular.png                     mysql.png
+bootstrap.png                   nodejs.png
+c-sharp.png                     photo_of_me.jpg
+codeigniter.png                 php.png
+codepen.png                     portfolio_assignment.png
+d3.png                          python.png
+django.png                      socket.png
+expressjs.png                   sqlite.png
+familycontacts.png              twitter.png
+fiveEleven.png
+
+./Webfundamentals/CSS/layoutsSampleCode:
+css_3.css       layouts.html
+
+./Webfundamentals/CSS/modernize:
+c-modernize.png         content_icon4.png       portfolio2.png
+content_icon1.png       logo.png                portfolio3.png
+content_icon2.png       main_pic.png            portfolio4.png
+content_icon3.png       portfolio1.png          read_me.txt
+
+./Webfundamentals/Git:
+about.txt
+
+./Webfundamentals/HTML:
+about.txt               hello_world.html        reg_form.html
+dojologo.png            indentation1.html
+fake_blog.html          indentation2.html
+
+./Webfundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt

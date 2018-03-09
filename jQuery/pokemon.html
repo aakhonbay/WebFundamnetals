@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+
+            function pokePics(){
+                var poke= ""
+
+                for(var i=1; i<=151 ; i++){
+                    poke += `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png">`
+
+                }
+                return poke;
+            }
+            $(document).ready(function(){
+                console.log(pokePics())
+
+
+                $(".container").append(pokePics())
+            })
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <img src="">
+<!-- <img src="http://pokeapi.co/media/img/1.png"> -->
+
+
+        </div>
+    </body>
+</html>

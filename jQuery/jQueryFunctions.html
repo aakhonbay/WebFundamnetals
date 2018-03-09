@@ -1,0 +1,219 @@
+<!-- Study only these tags!
+Effects (functions to do some cool animation effects)
+.hide()
+.show()
+.toggle()
+.slideDown()
+.slideToggle()
+.slideUp()
+.fadeOut()
+.fadeIn()
+CSS (adding or removing a class for any HTML element/DOM)
+.addClass()
+.removeClass()
+.css()
+Manipulation (retrieving or setting value or text in any HTML element)
+.after()
+.append()
+.prepend()
+.attr()
+.before()
+.html()
+.text()
+.val()
+Events (functions to handle an event)
+.click()
+.on()
+.live() - deprecated (JQuery 1.7)
+.hover() -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Functions!</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //getter function gets the value of something!
+            $('#addClass').click(function(){
+                $('#redParagraph').css('color','red');
+            });
+            $('#slidetoggleImage').hide();
+            $('#slideToggle').click(function(){
+                $('#slidetoggleImage').slideToggle('slow',function(){});
+            });
+            $('#append').click(function(){
+                $('#appendParagraph').append('<p>this has been appended</p>');
+            });
+
+            $('#addClass').click(function(){
+                $('#redParagraph').css('color','red');
+            });
+
+            $('#showParagraph').hide();
+            $('#hoverImage').hover(function(){
+                $('#showParagraph').show();},
+                function(){$('#showParagraph').hide()});
+
+            $('#toggleParagraph').hide();
+            $('#toggleImage').click(function(){
+                $('#toggleParagraph').toggle();})
+
+            $('#before').click(function(){
+                $('#dojo').before('Coding');})
+            $('#after').click(function(){
+                $('#dojo').after('Bootcamp');})
+
+            $('#slideUp').hover(function(){
+                $('#slideUpImage').slideUp();})
+            $('#slideDown').hover(function(){
+                $('#slideUpImage').slideDown();})
+
+            $('#fadeOut').click(function(){
+                $('#slideUpImage').fadeOut();})
+            $('#fadeIn').click(function(){
+                $('#slideUpImage').fadeIn();})
+
+            $( "input" ).on("blur",function(){
+                var value = $( this ).val();
+                $( "#change" ).text( value );
+                alert("Hey " + value + " !!!");
+            })
+
+            $('#textButton').click(function(){
+                var para1 = $('#textParagraph1').text();
+                var para2 = $('#textParagraph2').text();
+                $('#textParagraph1').text(para2);
+                $('#textParagraph2').text(para1);
+            })
+            $('#htmlButton').click(function(){
+                var html1 = $('#htmlParagraph1').html('<h1>do this<h1>');
+                var html2 = $('#htmlParagraph2').html('<h1>do something else<h1>');
+                $('#htmlParagraph1').val(html2);
+                $('#htmlParagraph2').val(html1);
+            });
+
+            $("#attrLarge").click(function(){
+                $("#attrImage").attr("width", "1000");
+            });
+            $("#attrSmall").click(function(){
+                $("#attrImage").attr("width","50");
+            });
+            // $("#original").click(function(){
+            //     $("#attrImage").attr();
+            // });
+
+
+            $('#quitt').click(function(){
+
+                $( ".quitt" ).data( "test", "pizza!");
+                $( ".quitt").text( $( ".quitt" ).data( "test" ));
+
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //a setter function sets the value of something
+            $('#button2').click(function(){
+                $('#myParagraph').text('see how I .text() works as a setter!')
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>AddClass</h1>
+    <p id='redParagraph'>Click the button to add class 'red' to this paragraph</p>
+    <button id="addClass"> AddClass </button>
+    <hr>
+
+    <h1>Slidetoggle</h1>
+    <img id="slidetoggleImage" src="portfolio4.png" height=200px width=200px>
+    <br>
+    <button id="slideToggle"> Slidetoggle </button>
+    <hr>
+
+    <h1>Append</h1>
+    <p id='appendParagraph'>Click the button to append a new paragraph!</p>
+    <button id="append"> Append </button>
+    <hr>
+
+    <h1> Show Paragraph </h1>
+    <img id="hoverImage" src="portfolio4.png" height=200px width=200px>
+    <p id='showParagraph'>I like this image!</p>
+    <hr>
+
+    <h1>Toggle Paragraph</h1>
+    <img id="toggleImage" src="portfolio4.png" height=200px width=200px>
+    <p id='toggleParagraph'>I like this image!</p>
+    <hr>
+
+    <h1>Bfore and After</h1>
+    <p id='dojo'> Dojo </p>
+    <button id="before"> Before </button>
+    <button id="after"> After </button>
+    <hr>
+
+    <h1>Slide Up and Down Paragraph</h1>
+    <img id="slideUpImage" src="portfolio4.png" height=200px width=200px>
+    <p id='slideDownParagraph'>I like this hovers!</p>
+    <button id="slideDown"> Show </button>
+    <button id="slideUp"> Hide </button>
+    <hr>
+
+    <button id="fadeIn"> Fade In </button>
+    <button id="fadeOut"> Fade Out </button>
+    <hr>
+
+    <form>Please enter full name and click anywhere in the screen:
+        <input type="text" value="Full Name Please">
+    </form>
+    <br>
+    <span id="change"></span>
+    <hr>
+
+    <br>
+    <h1> .text </h1>
+    <p id='textParagraph1'>This is the first paragraph</p>
+    <p id='textParagraph2'>This is the sencond paragraph</p>
+    <button id="textButton"> .text </button>
+    <hr>
+
+    <br>
+    <h1> .html </h1>
+    <p id='htmlParagraph1'>This is the first paragraph</p>
+    <p id='htmlParagraph2'>This is the sencond paragraph</p>
+    <button id="htmlButton"> .html </button>
+
+    <hr>
+    <h1> Attribute </h1>
+    <img id="attrImage" src="portfolio4.png" height=200px width=200px>
+    <br>
+    <button id="attrSmall"> Small </button>
+    <button id="attrLarge"> Large </button>
+    <!-- <button id="original"> Original </button> -->
+    <hr>
+
+    <button id="quitt"> QUIT </button>
+    <p class="quitt">This</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
